@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "paste your own api key"
 
 completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "write a leave letter "}])
 print(completion.choices[0].message.content)
